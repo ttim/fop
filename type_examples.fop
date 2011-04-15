@@ -1,0 +1,14 @@
+type Map<K, V> {
+	fun boolean add(Map<K, V> map, K key, V value);
+	fun boolean remove(Map<K, V> map, K key, V value);
+	
+	fun Map<K, V> create();
+}
+
+type Monad {
+	fun Monad<T> return(T arg);
+	fun Monad<B> bind(Monad<A> arg, fun<A, Monad<B>> fun);
+}
+
+
+HashMap<K, V> - structure
